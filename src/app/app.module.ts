@@ -23,6 +23,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
 import {MemberDetailResolver} from './_resolvers/member-detail.resolver';
 import { MemberListResolver } from './_resolvers/member-list.resolver';
+import { MemberEditComponent } from './members/member-edit/member-edit.component';
+import {MemberEditResolver} from './_resolvers/member-edit.resolver';
 
 
 export function tokenGetter() {
@@ -40,6 +42,8 @@ export function tokenGetter() {
     MemberDetailComponent,
     ListsComponent,
     MessagesComponent,
+    MemberEditComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -58,7 +62,7 @@ export function tokenGetter() {
       }
     })
   ],
-  providers: [AuthService, ErrorInterceptorProvider, MemberDetailResolver, MemberListResolver],
+  providers: [AuthService, ErrorInterceptorProvider, MemberDetailResolver, MemberListResolver, MemberEditResolver],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
