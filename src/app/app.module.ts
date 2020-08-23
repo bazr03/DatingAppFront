@@ -58,7 +58,6 @@ export function tokenGetter() {
       }
     })
   ],
-  providers: [AuthService, ErrorInterceptorProvider, MemberDetailResolver, MemberListResolver],
-  bootstrap: [AppComponent]
+  providers: [AuthService, ErrorInterceptorProvider, MemberDetailResolver, MemberListResolver]
 })
 export class AppModule {}
