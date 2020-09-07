@@ -20,6 +20,7 @@ export class NavComponent implements OnInit {
 
   ngOnInit(): void {
     this.authService.currentPhotoUrl.subscribe( photoUrl => this.photoUrl = photoUrl );
+    console.log("photUrl in nav Component: "+ this.photoUrl);
   }
 
   login(): void {
