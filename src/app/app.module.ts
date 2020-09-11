@@ -11,6 +11,7 @@ import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { FileUploadModule } from 'ng2-file-upload';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TimeagoModule} from 'ngx-timeago';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -60,6 +61,7 @@ export function tokenGetter() {
     BrowserAnimationsModule,
     NgxGalleryModule,
     FileUploadModule,
+    PaginationModule.forRoot(),
     BsDatepickerModule.forRoot(),
     BsDropdownModule.forRoot(),
     TimeagoModule.forRoot(),
